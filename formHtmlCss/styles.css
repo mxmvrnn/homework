@@ -1,0 +1,26 @@
+.form-container{
+    width: 50%;
+    margin-left: 25%;
+}
+.field-row input:not(#submit) {
+    margin:  10px;
+    padding: 4px;
+    width: 350px;
+    height: 20px;
+    border: 1.5px solid rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+.field-row label{
+    
+    width: 130px;
+    
+}
+#website + #check:invalid{
+    width: 25px;
+    height: 15px;
+    color: white;
+    background: red;
+}
+#website + #check:valid{
+    visibility: hidden;
+}

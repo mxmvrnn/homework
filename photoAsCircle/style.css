@@ -1,0 +1,11 @@
+.img1{
+    height: 700px;
+    width: 700px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+.img2{
+    height: 700px;
+    width: 700px;
+    border-radius:50%;
+}

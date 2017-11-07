@@ -1,0 +1,91 @@
+.nav{
+    position: relative;
+    height: 55px;
+    left : 100px;
+
+}
+.all{
+    position: relative;
+}
+
+.content{
+    /* position: relative; */
+    height: 400px;
+    width: 1024px;
+}
+.article1 img{
+    height: 50px;
+    width: 50px;
+}
+.article2 img{
+    height: 50px;
+    width: 50px;
+}
+
+.article1{
+    position: absolute;
+    top : 550px;
+    left:30px;
+    width: 100px;
+    background-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+}
+.article2{
+    position: absolute;
+    top : 550px;
+    left:200px;
+    width: 100px;
+    background-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+}
+p{
+    padding: 10px;
+}
+#nav1{
+    position: absolute;
+    height: 15px;
+    weight: 50px;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+}
+#nav2{
+    position: absolute;
+    height: 15px;
+    weight: 50px;
+    left: 70px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+}
+#nav3{
+    position: absolute;
+    height: 15px;
+    weight: 50px;
+    left: 130px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+}
+#nav4{
+    position: absolute;
+    height: 15px;
+    weight: 50px;
+    left: 190px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+}
+#nav5{
+    position: absolute;
+    height: 15px;
+    weight: 50px;
+    left: 250px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+}
+@media screen and (max-width: 1024px){
+
+}

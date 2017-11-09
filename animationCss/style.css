@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+.animation {
+    width: 100px;
+    height: 100px;
+   margin-top: 200px;
+    margin-left: calc(50% - 25px);
+    animation-name: myRotate;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+    position: relative;
+    animation-timing-function:linear;
+    
+  }
+  
+  @keyframes myRotate {
+    0% {
+        background: rgb(235, 135, 165);
+        width: 100px;
+        height: 100px;
+    }
+    
+    25%  {
+        /* background-image: linear-gradient(to top, red, blue);
+        background-image: linear-gradient(to top, #00FFF2, #888888); */
+        background: rgb(235, 135, 165);
+        box-shadow: 0 -400px 300px -300px steelblue inset;
+    }
+
+    50%{
+        width: 200px;
+        height: 200px;
+    }
+    75%{
+        /* background-image: linear-gradient(to top, green, blue); */
+        transform: rotate(360deg);
+    }
+    90%{
+        background: linear-gradient(to top, red, blue);
+    }
+  
+    100%  { 
+      border-radius: 100%;
+      width: 300px;
+      height: 300px;
+    }
+    }

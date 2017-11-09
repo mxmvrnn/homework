@@ -9,19 +9,35 @@
     height: 20px;
     border: 1.5px solid rgba(0, 0, 0, 0.75);
     border-radius: 5px;
+    display: inline-block;
 }
 .field-row label{
     
     width: 130px;
     
 }
-#website + #check:invalid{
-    width: 25px;
-    height: 15px;
+input:invalid ~ .check{
+    background: rgb(228, 56, 13);
+    width: 150px;
+    height: 20px;
+    border: 1.5px solid red;
+    border-radius: 5px;
     color: white;
-    background: red;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    
 }
-#website + #check:valid{
-    visibility: hidden;
+input:valid ~ .check{
+    display: none;
 }
-/* 123 */
+.triangle {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    display: inline-block;
+    width: 0; height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid rgb(228, 56, 13);
+    border-bottom: 10px solid transparent;
+}

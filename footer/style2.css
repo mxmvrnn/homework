@@ -1,0 +1,29 @@
+/* закрепить footer  с помощью отрицательного  margin */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html, body, .main {
+    height: 100%;
+    font-family: Helvetica;
+  }
+  .content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 90px;
+    background: linear-gradient(to left, rgb(162, 0, 255),rgb(0, 162, 255));
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  footer {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+    margin-top: -30px;
+    background: linear-gradient(to right, rgb(162, 0, 255),rgb(0, 162, 255));
+  }
+  

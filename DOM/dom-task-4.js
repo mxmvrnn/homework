@@ -1,7 +1,7 @@
 function removeChildren(elem) {
     var elemChildren = elem.childNodes;
     var length = elemChildren.length;
-    for (var i = length; i > 0; i-- ){            
+    for (var i = 0; i < length; i++ ){            
         if (elemChildren[i-1].nodeType == 3) {
             elem.removeChild(elemChildren[i-1]);
                     
@@ -13,4 +13,3 @@ function removeChildren(elem) {
     //  elem.childNodes[1].innerHTML = '';
 };
 removeChildren(body);
-

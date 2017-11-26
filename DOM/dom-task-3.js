@@ -1,30 +1,16 @@
 function removeChildren(elem) {
-    var a = elem.childNodes;
-    var length = a.length;
-    for (var i = 0; i < length; i++ ){            
-        if (a[i].nodeType == 3) {
-            elem.removeChild(a[i]);         
+    var elemChildren = elem.childNodes;
+    var length = elemChildren.length;
+    for (var i = length; i > 0; i-- ){            
+        if (elemChildren[i-1].nodeType == 3) {
+            elem.removeChild(elemChildren[i-1]);
+                    
         } else {
-            removeChildren(a[i]);
+            //var elem = elemChildren[i];
+            removeChildren(elemChildren[i-1]);            
         }
     }
     //  elem.childNodes[1].innerHTML = '';
 };
-removeChildren(div3);
+removeChildren(body);
 
-
-/* function recRemoveChild(elem){
-    var a = elem.childNodes,
-        b = elem.children,
-        c = elem.lastChild;
-        while(a.length){
-            for (var i = 0; i < a.length-1; i++ ){            
-                if (a[i].nodeType == 3) {
-                elem.removeChild(a[i]);
-                elem = c      
-            } 
-        }
-
-        
-}
- */

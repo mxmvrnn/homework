@@ -5,11 +5,13 @@
 
 
 function simpNumb(num){
-    for( var i = 2; i <= num-1; i++){
-        if (num % i == 0){
-            return 'число составное';
+    if ( num > 1000 ) { return 'Данные не верны'; }
+    if ( num == 1 )  {return 'это число не простое'; }
+    for( var i = 2 ; i <= num-1 ; i++ ){
+        if  (num % i == 0 ){
+            return 'число составное' ;
         }   
     }
-    return 'число простое';
+    return 'число простое' ;
 };
-console.log(simpNumb(1)); 
+console.log(simpNumb(77)); 

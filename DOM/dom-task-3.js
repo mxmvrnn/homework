@@ -1,4 +1,4 @@
-function removeChildren(elem) {
+/* function removeChildren(elem) {
     var elemChildren = elem.childNodes;
     var length = elemChildren.length;
     for (var i = length; i > 0; i-- ){            
@@ -6,15 +6,16 @@ function removeChildren(elem) {
             elem.removeChild(elemChildren[i-1]);
                     
         } else{
-            // elem = elemChildren[i-1];
-            removeChildren(elemChildren[i-1]);  
-        }   
+             elem = elemChildren[i-1];
+            removeChildren(elem)
     }
     //  elem.childNodes[1].innerHTML = '';
 };
-removeChildren(body);
+removeChildren(body); */
 
-/* function removeChildren(elem) {
+
+// работающий вариант
+function removeChildren(elem) { 
     var elemChildren = elem.childNodes;
     var length = elemChildren.length;
     for (var i = length; i > 0; i-- ){            
@@ -27,5 +28,5 @@ removeChildren(body);
     }
     //  elem.childNodes[1].innerHTML = '';
 };
-removeChildren(body);  */ 
+removeChildren(body);
 

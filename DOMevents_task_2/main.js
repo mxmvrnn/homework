@@ -42,18 +42,6 @@ function randPosition() {
 }()) 
 
 
-/* (function(){
-    var myDiv = document.createElement('div');
-    myDiv.innerHTML = 'Привет, мир!';
-
-
-    document.body.appendChild(myDiv)
-    myDiv.style.background = randomColor();
-    myDiv.style.height = randSize();
-    myDiv.style.width = randSize();
-    myDiv.style.top = randPosition();
-    myDiv.style.left = randPosition();
 
 
 
-}()) */

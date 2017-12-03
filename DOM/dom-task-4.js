@@ -1,15 +1,16 @@
-function removeChildren(elem) {
-    var elemChildren = elem.childNodes;
+var childList ={};
+
+function countChild(elem) { 
+    var elemChildren = elem.children;
     var length = elemChildren.length;
-    for (var i = length; i > 0; i-- ){            
-        if (elemChildren[i-1].nodeType == 3) {
-            elem.removeChild(elemChildren[i-1]);
-                    
-        } else {
-            var elem = elemChildren[i];
-            removeChildren(elem);            
+    for (var i = 0; i < length; i++ ){            
+        if (elemChildren[i].children != 0) {
+            alert('kek');
+    } else {
+            alert('makek');
+            // countChild(elemChildren[i-1]);
         }
     }
     //  elem.childNodes[1].innerHTML = '';
 };
-removeChildren(body);
+countChild(div1);

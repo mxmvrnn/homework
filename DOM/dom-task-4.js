@@ -4,7 +4,7 @@ function countChild(elem) {
     var elemChildren = elem.children;
     var length = elemChildren.length;
     for (var i = 0; i < length; i++ ){            
-        if (elemChildren[i].children != 0) {
+        if (elemChildren[i].children !== 0) {
             alert('kek');
     } else {
             alert('makek');

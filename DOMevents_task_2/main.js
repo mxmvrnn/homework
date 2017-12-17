@@ -42,11 +42,11 @@ function randPosition() {
 
 
 var dragObject = {};
-var divContainer = document.getElementById('div-container');
+var book = document.getElementById('div-container');
 var dndDiv = document.getElementsByClassName('dnd-div');
 
 
-divContainer.onmousedown = function(e){
+book.onmousedown = function(e){
     /* if (e.which != 1) { 
         return; 
     } */
@@ -58,12 +58,12 @@ divContainer.onmousedown = function(e){
         elem.style.top = e.pageY - elem.offsetHeight / 2 + 'px';
     }
 
-    divContainer.onmousemove = function(e) {
+    book.onmousemove = function(e) {
         moveAt(e);
     }
 
     elem.onmouseup = function() {
-        divContainer.onmousemove = null;
+        book.onmousemove = null;
         ball.onmouseup = null;
         elem.style.zIndex = 1;
       }
